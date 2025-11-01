@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Undulation Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+        
+        .intro {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .faq-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .faq-answer {
+            color: #555;
+        }
+        
+        .highlight {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-left: 4px solid #4caf50;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .warning {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .info {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-left: 4px solid #2196f3;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .code {
+            background-color: #f4f4f4;
+            padding: 12px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        
+        .contact-section {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-left: 4px solid #2196f3;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-links {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        
+        .nav-links a {
+            margin-right: 15px;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Support</h1>
+        <p class="intro">Welcome to the Undulation Calculator support page. Here you'll find answers to common questions, troubleshooting tips, and information about how to use the app.</p>
+        
+        <h2>Quick Start</h2>
+        <p>To calculate geoid undulation at a location:</p>
+        <ol>
+            <li>Open the app and go to the <strong>Calculator</strong> tab</li>
+            <li>Enter coordinates in one of these formats:
+                <ul>
+                    <li>Decimal degrees: <code>(48.8566, 2.3522)</code></li>
+                    <li>With cardinal directions: <code>48.8566°N, 2.3522°E</code></li>
+                    <li>Paste coordinates directly from Apple Maps or Google Maps</li>
+                </ul>
+            </li>
+            <li>The app will automatically calculate and display the geoid undulation value</li>
+            <li>Optionally enter an altitude to see conversions between MSL, HAE, and AGL</li>
+        </ol>
+        
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">What is geoid undulation?</div>
+            <div class="faq-answer">
+                <p>Geoid undulation (N) is the height difference between the geoid (Mean Sea Level) and the WGS84 ellipsoid used by GPS systems. GPS devices report altitude relative to the WGS84 ellipsoid, but many real-world applications need height above Mean Sea Level. The undulation varies by location, typically ranging from about -106 meters to +85 meters.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">What coordinate formats are supported?</div>
+            <div class="faq-answer">
+                <p>The app accepts coordinates in several formats:</p>
+                <ul>
+                    <li><code>(latitude, longitude)</code> - e.g., <code>(48.8566, 2.3522)</code></li>
+                    <li><code>latitude°N/S, longitude°E/W</code> - e.g., <code>48.8566°N, 2.3522°E</code></li>
+                    <li>You can paste coordinates directly from Apple Maps or Google Maps</li>
+                </ul>
+                <p>Latitude must be between -90° and 90°. Longitude must be between -180° and 180°.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">What do MSL, HAE, and AGL mean?</div>
+            <div class="faq-answer">
+                <ul>
+                    <li><strong>MSL (Mean Sea Level)</strong>: Height above the geoid (Mean Sea Level)</li>
+                    <li><strong>HAE (Height Above Ellipsoid)</strong>: GPS altitude relative to the WGS84 ellipsoid</li>
+                    <li><strong>AGL (Above Ground Level)</strong>: Height above the terrain at that location</li>
+                </ul>
+                <p>The relationship is: <strong>HAE = MSL + Geoid Undulation</strong> and <strong>AGL = HAE - Terrain Elevation</strong></p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">What data sources does the app use?</div>
+            <div class="faq-answer">
+                <ul>
+                    <li><strong>EGM96</strong> (Earth Gravitational Model 1996) - Official geoid model at 15 arc-minute resolution for geoid undulation calculations</li>
+                    <li><strong>ETOPO1</strong> - Global terrain elevation model at 1 arc-minute resolution (~1.8 km) covering both land and ocean bathymetry</li>
+                </ul>
+                <p>Both datasets are embedded in the app and all calculations are performed locally on your device.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">How accurate are the calculations?</div>
+            <div class="faq-answer">
+                <p>The accuracy depends on the data sources:</p>
+                <ul>
+                    <li><strong>Geoid undulation</strong>: Within ±1 meter using the EGM96 model (15 arc-minute resolution)</li>
+                    <li><strong>Terrain elevation</strong>: Approximately ±10-20 meters using ETOPO1 data (1 arc-minute resolution, ~1.8 km)</li>
+                </ul>
+                <p>The app uses bilinear interpolation for sub-grid accuracy between data points.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Does the app require internet connection?</div>
+            <div class="faq-answer">
+                <p>No. Undulation Calculator works completely offline. All geodetic data is embedded in the app, and all calculations are performed locally on your device.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">What units are supported?</div>
+            <div class="faq-answer">
+                <p>The app supports both <strong>meters</strong> and <strong>feet</strong> for all elevation values. You can switch between units in the Settings section of the Calculator tab.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">What does negative AGL mean?</div>
+            <div class="faq-answer">
+                <p>A negative AGL (Above Ground Level) value means your entered altitude is below the terrain elevation at that location. This could occur if you're in a valley or if the terrain data indicates higher elevation than your input.</p>
+            </div>
+        </div>
+        
+        <h2>Using the Features</h2>
+        
+        <h3>Calculator Tab</h3>
+        <p>Enter coordinates to calculate geoid undulation and terrain elevation. Optionally enter an altitude to see conversions between MSL, HAE, and AGL reference systems.</p>
+        
+        <h3>Graphs Tab</h3>
+        <p>Visualize geoid undulation and terrain elevation along longitude and latitude cross-sections. The graphs show:</p>
+        <ul>
+            <li>Geoid surface (MSL) in blue</li>
+            <li>Terrain surface (HAE) in brown</li>
+            <li>WGS84 ellipsoid reference line at 0</li>
+            <li>Your current location marked with a red dot</li>
+        </ul>
+        
+        <h3>Globe Tab</h3>
+        <p>Explore a 3D visualization of Earth showing:</p>
+        <ul>
+            <li>Color-coded geoid undulation (blue = positive, red = negative)</li>
+            <li>Actual terrain geometry with realistic lighting</li>
+            <li>Ocean bathymetry</li>
+        </ul>
+        <p>Rotate the globe by dragging, pinch to zoom, and tap to select locations.</p>
+        
+        <h2>Troubleshooting</h2>
+        
+        <div class="warning">
+            <h3>Coordinates not calculating</h3>
+            <ul>
+                <li>Verify coordinates are in valid ranges: latitude -90° to 90°, longitude -180° to 180°</li>
+                <li>Check the coordinate format - use <code>(lat, lon)</code> or paste from maps</li>
+                <li>Ensure there are no extra spaces or invalid characters</li>
+            </ul>
+        </div>
+        
+        <div class="warning">
+            <h3>Globe not loading</h3>
+            <ul>
+                <li>The initial globe generation can take 30-60 seconds - please wait</li>
+                <li>The globe requires significant processing - make sure your device has sufficient memory</li>
+                <li>Try closing and reopening the app if the globe doesn't appear</li>
+            </ul>
+        </div>
+        
+        <div class="info">
+            <h3>Slow performance</h3>
+            <ul>
+                <li>Globe generation is computationally intensive and may take time</li>
+                <li>Large profile graphs (±5° range) sample many points and may be slow</li>
+                <li>Calculations are performed on-device for privacy - there's no server-side processing</li>
+            </ul>
+        </div>
+        
+        <h2>Technical Information</h2>
+        
+        <h3>Data Models</h3>
+        <ul>
+            <li><strong>EGM96</strong>: 721 rows × 1440 columns (15 arc-minute grid)</li>
+            <li><strong>ETOPO1</strong>: 10,801 rows × 21,601 columns (1 arc-minute grid)</li>
+        </ul>
+        
+        <h3>Interpolation</h3>
+        <p>The app uses bilinear interpolation to calculate values between grid points for sub-grid accuracy.</p>
+        
+        <h3>Coordinate Systems</h3>
+        <ul>
+            <li>Input coordinates: Decimal degrees (WGS84)</li>
+            <li>All calculations: WGS84 reference frame</li>
+            <li>Geoid model: EGM96 (WGS84 compatible)</li>
+        </ul>
+        
+        <h2>Test Coordinates</h2>
+        <p>Try these known locations to verify the app is working correctly:</p>
+        <ul>
+            <li><strong>Paris, France</strong>: <code>(48.8566, 2.3522)</code> - Undulation ≈ 47.5 m</li>
+            <li><strong>New York, USA</strong>: <code>(40.7128, -74.0060)</code> - Undulation ≈ -30.0 m</li>
+            <li><strong>Tokyo, Japan</strong>: <code>(35.6762, 139.6503)</code> - Undulation ≈ 39.0 m</li>
+            <li><strong>Sydney, Australia</strong>: <code>(-33.8688, 151.2093)</code> - Undulation ≈ 14.0 m</li>
+        </ul>
+        
+        <div class="contact-section">
+            <h2>Contact Support</h2>
+            <p>If you have questions, encounter issues, or have feedback about Undulation Calculator, please contact us:</p>
+            <ul>
+                <li>Through the App Store listing (Reviews & Ratings section)</li>
+                <li>Submit feedback via your preferred method</li>
+            </ul>
+            <p>When reporting issues, please include:</p>
+            <ul>
+                <li>Device model and iOS version</li>
+                <li>App version (visible in Settings)</li>
+                <li>Steps to reproduce the issue</li>
+                <li>Screenshots if applicable</li>
+            </ul>
+        </div>
+        
+        <div class="nav-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        
+        <footer>
+            <p>&copy; <span id="currentYear"></span> Undulation Calculator. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
